@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+span{
+    width: 50%;
+    height: 50px;
+    position: absolute;
+    pointer-events: none;
+    border-radius: 50%;
+    background: #e000e0;
+    box-shadow: 20px 20px 60px #5c013c,-20px -20px 60px #e000e0;
+    transform: translate(-50%,50%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+       transform: translate(-50%, 50%); 
+       opacity:1 ; 
+       filter: hue-rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -1000%); 
+        opacity:0; 
+        filter: hue-rotate(960deg);
+        
+    }
+}
